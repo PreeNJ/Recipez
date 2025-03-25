@@ -4,14 +4,24 @@ body {
     text-align: center;
 }
 
+body {
+background-image: url(./walpaper.png);
+background-size: cover;
+background-repeat: no-repeat;
+}
+
 .container {
+    /* width of the page */
     width: 80%;
     margin: auto;
     padding: 20px;
 }
 
 h1 {
-    color: #333;
+    color: #070707;
+    font-size: 2.5em;
+    margin: 20px 0;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
 }
 
 .buttons {
@@ -25,7 +35,7 @@ button {
     background-color: #ff7f50;
     color: white;
     cursor: pointer;
-    border-radius: 5px;
+    border-radius: 20px;
 }
 
 button:hover {

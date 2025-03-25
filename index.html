@@ -7,15 +7,18 @@
     <title>Recipe Hub</title>
     <link rel="stylesheet" href="styles.css">
 <link rel="icon" href="./icon.png">
+
 </head>
 <body>
     <div class="container">
         <h1>Simple recipe, magnificent results😍</h1>
         <div class="buttons">
+            <!-- creating and grouping the buttons together -->
             <button onclick="fetchRecipes('breakfast')">Breakfast</button>
             <button onclick="fetchRecipes('lunch')">Lunch</button>
             <button onclick="fetchRecipes('dinner')">Dinner</button>
         </div>
+        <!-- mpty div where the fetched recipes will be displayed -->
         <div id="recipes" class="recipe-container"></div>
     </div>
     <script defer src="script.js"></script>
