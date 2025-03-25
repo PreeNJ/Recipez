@@ -9,7 +9,18 @@ async function fetchRecipes(mealType) {
     else category = "Beef"; 
     // Assuming dinner
 
+    // Calls the API using fetch then waits for the response.. then change to json
+
     const response = await fetch(apiURL + category);
     const data = await response.json();
+// passes the meal data to displayRecipes
     displayRecipes(data.meals);
+}
+
+// Gets the #recipes container and clears previous results innerHTML"""
+function displayRecipes(meals) {
+    const recipeContainer = document.getElementById("recipes");
+    recipeContainer.innerHTML = "";
+
+    
 }
