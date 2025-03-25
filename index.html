@@ -1,27 +1,23 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Recipe Hub</title>
-    <link rel="stylesheet" href="./styles.css">
-    <link rel="icon" type="image/png" href="./icon.png">
-
+    <link rel="stylesheet" href="styles.css">
+<link rel="icon" href="./icon.png">
 </head>
 <body>
     <div class="container">
-        <h1>Recipe Hub</h1>
-        <p>Simple recipe, magnificent results 😍</p>
-        <input type="text" id="search-box" placeholder="Enter a meal name...">
-        <button onclick="searchRecipe()">Search</button>
-        
-        <div id="recipe-container">
-            <h2 id="meal-title"></h2>
-            <img id="meal-image" src="" alt="Meal Image">
-            <p id="meal-instructions"></p>
+        <h1>Simple recipe, magnificent results😍</h1>
+        <div class="buttons">
+            <button onclick="fetchRecipes('breakfast')">Breakfast</button>
+            <button onclick="fetchRecipes('lunch')">Lunch</button>
+            <button onclick="fetchRecipes('dinner')">Dinner</button>
         </div>
+        <div id="recipes" class="recipe-container"></div>
     </div>
-
-    <script href="./script.js"></script>
+    <script defer src="script.js"></script>
 </body>
 </html>

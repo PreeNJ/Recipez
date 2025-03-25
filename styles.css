@@ -1,45 +1,58 @@
 body {
     font-family: Arial, sans-serif;
-    background-color: whitesmoke;
+    background-color: #f8f9fa;
     text-align: center;
 }
 
 .container {
-    /* to prevent stretching */
-    max-width: 500px; 
-    margin: 50px auto;
-    background: white;
+    width: 80%;
+    margin: auto;
     padding: 20px;
-    border-radius: 8px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
-input {
-    width: 80%;
-    padding: 10px;
-    margin: 10px 0;
-    border: 1px solid #ccc;
-    border-radius: 20px;
+h1 {
+    color: #333;
+}
+
+.buttons {
+    margin: 20px 0;
 }
 
 button {
-    padding: 10px 15px;
-    background: brown;
-    color: white;
+    padding: 10px 20px;
+    margin: 5px;
     border: none;
+    background-color: #ff7f50;
+    color: white;
     cursor: pointer;
     border-radius: 5px;
 }
 
 button:hover {
-    background: rgb(224, 115, 115);
+    background-color: #ff4500;
 }
 
-#recipe-container {
-    margin-top: 20px;
+.recipe-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
 }
 
-#meal-image {
-    max-width: 100%;
+.recipe-card {
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin: 15px;
+    padding: 15px;
+    width: 250px;
+}
+
+.recipe-card img {
+    width: 100%;
     border-radius: 5px;
+}
+
+.recipe-card h3 {
+    margin: 10px 0;
+    color: #333;
 }
