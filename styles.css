@@ -1,11 +1,12 @@
 body {
     font-family: Arial, sans-serif;
-    background-color: #f4f4f4;
+    background-color: whitesmoke;
     text-align: center;
 }
 
 .container {
-    max-width: 500px;
+    /* to prevent stretching */
+    max-width: 500px; 
     margin: 50px auto;
     background: white;
     padding: 20px;
