@@ -23,7 +23,7 @@ function displayRecipes(meals) {
     const recipeContainer = document.getElementById("recipes");
     recipeContainer.innerHTML = "";
 
-    // Loop through the meals and create a card for each one
+    // Loop through the meals and creating a div card for each one
     meals.forEach(meal => {
         const mealCard = document.createElement("div");
         mealCard.classList.add("recipe-card");
