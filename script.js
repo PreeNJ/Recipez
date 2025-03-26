@@ -27,6 +27,7 @@ function displayRecipes(meals) {
     meals.forEach(meal => {
         const mealCard = document.createElement("div");
         mealCard.classList.add("recipe-card");
+        // Sets the image, title, and View Recipe button inside mealCard.
         mealCard.innerHTML = `
             <img src="${meal.strMealThumb}" alt="${meal.strMeal}">
             <h3>${meal.strMeal}</h3>
@@ -35,4 +36,12 @@ function displayRecipes(meals) {
         recipeContainer.appendChild(mealCard);
     });
     
+}
+
+async function viewRecipe(mealId) {
+    const response = await fetch(`https://www.themealdb.com/api/json/v1/1/lookup.php?i=${mealId}`);
+    const data = await response.json();
+    const meal = data.meals[0];
+
+    alert(`Recipe for ${meal.strMeal}: ${meal.strInstructions}`);
 }
