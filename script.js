@@ -1,7 +1,8 @@
 const apiURL = "https://www.themealdb.com/api/json/v1/1/filter.php?c=";
 // fetch the meal data from the API
 
-// asynchronisation function to fetch recipes and Determine the meal category based on the button clicked
+// for fetching recipes and determining the meal category based on the button 
+// clicked I applied asynchronisation function recipes
 async function fetchRecipes(mealType) {
     let category = "";
     if (mealType === "breakfast") category = "Breakfast";
@@ -10,9 +11,9 @@ async function fetchRecipes(mealType) {
     // Assuming dinner
 
     // Calls the API using fetch then waits for the response.. then change to json
-
     const response = await fetch(apiURL + category);
     const data = await response.json();
+    
 // passes the meal data to displayRecipes
     displayRecipes(data.meals);
 }
@@ -22,6 +23,7 @@ function displayRecipes(meals) {
     const recipeContainer = document.getElementById("recipes");
     recipeContainer.innerHTML = "";
 
+    // Loop through the meals and create a card for each one
     meals.forEach(meal => {
         const mealCard = document.createElement("div");
         mealCard.classList.add("recipe-card");
