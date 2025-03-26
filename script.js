@@ -22,5 +22,15 @@ function displayRecipes(meals) {
     const recipeContainer = document.getElementById("recipes");
     recipeContainer.innerHTML = "";
 
+    meals.forEach(meal => {
+        const mealCard = document.createElement("div");
+        mealCard.classList.add("recipe-card");
+        mealCard.innerHTML = `
+            <img src="${meal.strMealThumb}" alt="${meal.strMeal}">
+            <h3>${meal.strMeal}</h3>
+            <button onclick="viewRecipe('${meal.idMeal}')">View Recipe</button>
+        `;
+        recipeContainer.appendChild(mealCard);
+    });
     
 }
