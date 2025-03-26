@@ -37,8 +37,8 @@ function displayRecipes(meals) {
     });
     
 }
-
-// async function viewRecipe(mealId) {
+//   View Recipe Fetches detailed recipe data When is clicked
+    async function viewRecipe(mealId) {
 //     const response = await fetch(`https://www.themealdb.com/api/json/v1/1/lookup.php?i=${mealId}`);
 //     const data = await response.json();
 //     const meal = data.meals[0];
