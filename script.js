@@ -10,7 +10,7 @@ async function fetchRecipes(mealType) {
   else category = "Beef";
   // Assuming dinner
 
-  // Calls the API using fetch then waits for the response and change to json
+  // Calls the API using fetch then waits for the response change to json
   const response = await fetch(apiURL + category);
   const data = await response.json();
 
