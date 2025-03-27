@@ -1,6 +1,6 @@
 body {
   font-family: Arial, sans-serif;
-  background-color: #f8f9fa;
+  background-color: white;
   text-align: center;
   background-image: url(./walpaper.png);
   background-size: cover;
@@ -10,7 +10,7 @@ body {
 }
 
 .container {
-  /* width of the page */
+  
   width: 80%;
   margin: auto;
   padding: 20px;

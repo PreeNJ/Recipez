@@ -1,8 +1,8 @@
-# Recipez
+ # Recipez
 
 A beautiful recipe discovery web application that helps you find delicious meals for breakfast, lunch, and dinner.
 
-## Features
+ ##  Features
 
 -  Browse recipes by meal type (Breakfast, Lunch, Dinner)
 -  Visual recipe cards with images
@@ -10,14 +10,14 @@ A beautiful recipe discovery web application that helps you find delicious meals
 -  Detailed recipe instructions in a modal view
 -  Beautiful UI with a custom background
 
-## Technologies Used
+ ##  Technologies Used
 
 - HTML5
 - CSS3
 - JavaScript
 - TheMealDB API
 
-## Getting Started
+ `## Getting Started
 
 1. Clone the repository:
 
